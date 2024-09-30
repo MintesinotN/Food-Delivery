@@ -1,0 +1,12 @@
+.app-download{
+    @apply m-[auto_auto] mt-24 text-[max(3vw,20px)] text-center font-normal;
+}
+.app-download-platforms{
+    @apply flex justify-center gap-[max(2vw,10px)] mt-10;
+}
+.app-download-platforms img{
+    @apply w-[max(30vw,120px)] max-w-44 transition duration-500 cursor-pointer;
+}
+.app-download-platforms img:hover{
+    @apply scale-105;
+}

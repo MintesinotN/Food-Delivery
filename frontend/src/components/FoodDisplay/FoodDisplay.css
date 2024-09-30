@@ -1,0 +1,10 @@
+.food-display{
+    @apply mt-8;
+}
+.food-display h2{
+    @apply text-[max(2vw,24px)] font-semibold;
+}
+.food-display-list{
+    @apply grid mt-8 gap-y-12 gap-x-4;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+}

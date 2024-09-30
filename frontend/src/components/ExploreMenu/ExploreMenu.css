@@ -1,0 +1,32 @@
+.explore-menu{
+    @apply flex flex-col gap-2.5;
+}
+.explore-menu h1{
+    @apply text-[#262626] font-medium;
+}
+.explore-menu-text{
+    @apply max-w-[60%] text-[#808080];
+}
+.explore-menu-list{
+    @apply flex justify-between items-center gap-8 text-center my-5 mx-0 overflow-x-scroll;
+}
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-menu-list-item img{
+    @apply w-[7.5vw] min-w-20 cursor-pointer rounded-full transition duration-200;
+}
+.explore-menu-list-item p{
+    @apply mt-2.5 text-[#747474] text-[max(1.4vw,16px)] cursor-pointer;
+}
+.explore-menu hr{
+    @apply my-2.5 mx-0 h-0.5 bg-[#e2e2e2] border-none;
+}
+.explore-menu-list-item .active{
+    @apply border-4 border-[tomato] p-0.5;
+}
+@media(max-width:1050px){
+    .explore-menu-text{
+        @apply max-w-full text-sm;
+    }
+}

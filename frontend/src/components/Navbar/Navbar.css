@@ -1,0 +1,78 @@
+.navbar{
+    @apply py-5 px-0 flex justify-between items-center;
+}
+
+.navbar .logo{
+    @apply w-36;
+}
+
+.navbar-menu{
+    @apply flex list-none gap-5 text-[#49557e] text-lg;
+}
+
+.navbar-right{
+    @apply flex items-center gap-10;
+}
+
+.navbar button{
+    @apply bg-transparent text-base text-[#49557e] border border-solid border-[#ff6347] py-2.5 px-8 rounded-[10px] cursor-pointer transition duration-300;
+}
+
+.navbar button:hover{
+    @apply bg-[#fff4f2];
+}
+
+.navbar .active{
+    @apply pb-0.5 border-b-2 border-[#49557e];
+}
+
+.navbar li{
+    @apply cursor-pointer;
+}
+
+.navbar-search-icon{
+    @apply relative;
+}
+
+.navbar-search-icon .dot{
+    @apply absolute min-w-2 min-h-2 bg-[tomato] rounded-md top-[-8px] right-[-8px];
+}
+@media (max-width:1050px){
+    .navbar .logo{
+        @apply w-36;
+    }
+    .navbar-menu{
+        @apply gap-5 text-base;
+    }
+    .navbar-right{
+        @apply gap-8;
+    }
+    .navbar-right img{
+        @apply w-5;
+    }
+    .navbar-right button{
+        @apply p-[8px_25px];
+    }
+}
+@media (max-width:900px){
+    .navbar .logo{
+        @apply w-32;
+    }
+    .navbar-menu{
+        @apply gap-4 text-base;
+    }
+    .navbar-right{
+        @apply gap-5;
+    }
+    .navbar-right img{
+        @apply w-5;
+    }
+    .navbar-right button{
+        @apply p-[7px_20px];
+    }
+}
+@media (max-width:750px){
+    .navbar-menu{
+        @apply hidden;
+    }
+}

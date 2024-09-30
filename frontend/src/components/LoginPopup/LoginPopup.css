@@ -1,0 +1,31 @@
+.login-popup{
+    @apply fixed z-10 w-full h-full bg-[#00000090] grid;
+}
+.login-popup-container{
+    @apply place-self-center w-[max(23vw,330px)] text-[#808080] bg-white flex flex-col gap-6 p-[25px_30px] rounded-[8px] text-sm;
+    animation: fadeIn 0.5s; 
+}
+.login-popup-title{
+    @apply flex justify-between items-center text-black;
+}
+.login-popup-title img{
+    @apply w-4 cursor-pointer;
+}
+.login-popup-inputs{
+    @apply flex flex-col gap-5;
+}
+.login-popup-inputs input{
+    @apply outline-none border border-[#c9c9c9] p-2.5 rounded-[4px];
+}
+.login-popup-container button{
+    @apply border-none p-2.5 rounded-[4px] text-white bg-[tomato] text-base cursor-pointer;
+}
+.login-popup-condition{
+    @apply flex items-start gap-2 mt-[-15px];
+}
+.login-popup-condition input{
+    @apply mt-[5px];
+}
+.login-popup p span{
+    @apply text-[tomato] font-normal cursor-pointer;
+}
