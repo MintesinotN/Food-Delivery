@@ -1,39 +1,74 @@
-.food-item{
-    @apply w-full m-auto rounded-[15px] transition duration-300;
-    box-shadow: 0px 0px 10px #00000015;
+.food-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
     animation: fadeIn 1s;
 }
-.food-item-image{
-    @apply w-full;
+
+.food-item-image {
+    width: 100%;
     border-radius: 15px 15px 0px 0px;
 }
-.food-item-info{
-    @apply p-5;
+
+.food-item-info {
+    padding: 20px;
 }
-.food-item-name-rating{
-    @apply flex justify-between items-center mb-[10px];
+
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
-.food-item-name-rating p{
-    @apply text-xl font-normal;
+
+.food-item-name-rating p {
+    font-size: 1.25rem;
+    font-weight: 400;
 }
-.food-item-name-rating img{
-    @apply w-[70px];
+
+.food-item-name-rating img {
+    width: 70px;
 }
-.food-item-desc{
-    @apply text-[#676767] text-[12px];
+
+.food-item-desc {
+    color: #676767;
+    font-size: 12px;
 }
-.food-item-price{
-    @apply text-[tomato] text-[22px] font-normal my-2;
+
+.food-item-price {
+    color: tomato;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 8px 0;
 }
-.food-item-img-container{
-    @apply relative;
+
+.food-item-img-container {
+    position: relative;
 }
-.food-item-img-container .add{
-    @apply w-[35px] absolute bottom-[15px] right-[15px] cursor-pointer rounded-full;
+
+.food-item-img-container .add {
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
 }
-.food-item-counter{
-    @apply absolute bottom-[15px] right-[15px] flex items-center gap-2 p-[6px] rounded-[20px] bg-white;
+
+.food-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px;
+    border-radius: 20px;
+    background-color: white;
 }
-.food-item-counter img{
-    @apply w-8;
+
+.food-item-counter img {
+    width: 32px;
 }

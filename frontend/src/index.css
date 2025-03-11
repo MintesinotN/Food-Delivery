@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+}
 
-*{
-    @apply p-0 m-0 box-border font-outfit scroll-smooth;
+body {
+    min-height: 100vh;
 }
-body{
-    @apply min-h-screen;
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
-a{
-    @apply no-underline text-inherit;
+
+.app {
+    width: 80%;
+    margin: auto;
 }
-.app{
-    @apply w-4/5 m-auto;
-}
+
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -23,4 +29,4 @@ a{
     100% {
       opacity: 1;
     }
-  }
+}

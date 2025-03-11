@@ -7,12 +7,12 @@ const Footer = () => {
     <div className='footer' id='footer'>
       <div className="footer-content">
         <div className="footer-content-left">
-            <img src={assets.logo} alt="" />
+            <img src={assets.logo} alt={assets.logo} />
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
             <div className="footer-social-icons">
-                <img src={assets.facebook_icon} alt="" />
-                <img src={assets.twitter_icon} alt="" />
-                <img src={assets.linkedin_icon} alt="" />
+                <img src={assets.facebook_icon} alt={assets.facebook_icon} />
+                <img src={assets.twitter_icon} alt={assets.twitter_icon} />
+                <img src={assets.linkedin_icon} alt={assets.linkedin_icon} />
             </div>
         </div>
         <div className="footer-content-center">
